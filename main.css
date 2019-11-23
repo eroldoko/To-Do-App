@@ -1,0 +1,27 @@
+.card-body{
+  word-wrap: break-word;
+  padding: 0;
+}
+.card{
+  margin-top: 5px;
+}
+.taskCard{
+  padding: 5px;
+}
+.card-footer{
+  padding: 0;
+}
+
+.title{
+  width: 250px;
+  margin-bottom: 10px;
+}
+.taskArea{
+  resize:none;
+  width: 100%;
+
+}
+h2{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>To Do App</title>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>To Do App</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="row">
+          <input type="text" placeholder="Title" class="title form-control">
+          <div class="input-group">
+            <input id="task" type="text" class="form-control" placeholder="Your To Do Stuff Here">
+            <div class="input-group-append">
+              <span class="input-group-text"><button class="add btn btn-primary">Add</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="container col-lg-12 row">
+
+        </div>
+        <script id="temp" type="template">
+          <div class="taskCard col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3>{{taskTitle}}</h3>
+              </div>
+
+              <div class="card-body text-center">
+               <h2> <textarea id="{{id}}" class="taskArea"rows="5"cols="14" readonly>{{taskText}}</textarea></h2>
+              </div>
+              <div class="card-footer">
+                <button id="{{id}}" class="delete btn btn-danger form-control">Delete</button>
+                <button id="{{id}}" class="edit btn btn-success form-control">Edit</button>
+              </div>
+            </div>
+          </div>
+        </script>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
